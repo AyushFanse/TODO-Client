@@ -1,6 +1,8 @@
 import axios from "axios";
-const AuthApis = "http://localhost:4000/auth";
-const UserApis = "http://localhost:4000/user";
+export const apiUrl = "http://localhost:4000/"
+
+const AuthApis = apiUrl + "auth";
+const UserApis = apiUrl + "user";
 
 //~-----------------------* Register *-----------------------~//
 
