@@ -1,0 +1,155 @@
+#menuItemsOut {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#menuItems {
+    font-size: 18px;
+    display: flex;
+    font-weight: 600;
+    font-family: "Montserrat";
+    justify-content: space-around;
+    opacity: 0.6;
+}
+
+#menuItemsOut:hover #menuItems {
+    opacity: 1;
+    color: var(--theme);
+}
+
+#menuItemsUser {
+    font-size: 21px;
+    font-weight: 600;
+    cursor: default;
+    margin: auto 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menuItemsIcon {
+    width: 20px;
+    opacity: 0.6;
+}
+
+#menuItemsOut:hover #menuItemsIcon {
+    opacity: 1;
+    color: var(--theme);
+}
+
+#appbar {
+    position: fixed;
+    background: var(--theme);
+    cursor: default;
+    text-transform: uppercase;
+    box-shadow: 4px 0px 10px var(--theme);
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#searchFieldForMd::placeholder {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+#homeBack {
+    backdrop-filter: blur(1px);
+    margin-top: 50px;
+}
+
+.wave {
+    width: 22px;
+    height: 22px;
+}
+
+#navHeader {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+    #searchIconBar {
+        display: none;
+    }
+
+    #searchIconOut {
+        display: none;
+    }
+
+    #searchField {
+        display: none;
+    }
+
+    #searchIconBarForMd {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        background-color: #94c8fd28;
+        backdrop-filter: blur(15px);
+        padding: 5px 10px;
+    }
+
+    #searchIconOutForMd {
+        position: relative;
+        margin-right: 2px;
+    }
+
+    #searchFieldForMd {
+        border: none;
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        padding-left: 10px;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        left: 0;
+        overflow: hidden;
+    }
+
+    #navHeader {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #searchIconBar {
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        background-color: #94c8fd28;
+        backdrop-filter: blur(15px);
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+
+    #searchIconOut {
+        position: relative;
+        margin-bottom: -3px;
+    }
+
+    #searchField {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        left: 0;
+        overflow: hidden;
+    }
+
+    #searchField::placeholder {
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        opacity: 0.9;
+    }
+
+    #SearchBarForMd {
+        width: 100%;
+        display: none;
+    }
+}

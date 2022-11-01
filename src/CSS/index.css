@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Days+One&family=Inter:wght@700&family=Play:wght@400;700&family=Poppins:wght@600&display=swap");
+
+* {
+    font-family: "Montserrat";
+}
+
+:root {
+    --cl: rgb(30, 53, 187);
+    --login: #fff;
+    --theme: rgb(30, 53, 187);
+    --clo: rgba(30, 53, 187, 0.616);
+    --gr: rgba(30, 53, 187, 0.616);
+}
+
+/*&________________ MAIN PAGE CSS ________________&*/
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

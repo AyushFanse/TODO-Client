@@ -1,0 +1,42 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background: #f5f5f5;
+    align-items: unset;
+}
+
+.container {
+    width: 90%;
+    max-width:500px;
+    min-height: 300px;
+    padding: 15px 10px;
+}
+
+.task_container {
+    margin: 10px auto;
+    gap: 5px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.task {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.line_through {
+    text-decoration: line-through;
+}
+
+.css-h8tnzr-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-h8tnzr-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
+    color: var(--cl) !important;
+    border-radius: 50% !important;
+}
