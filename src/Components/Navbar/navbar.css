@@ -14,7 +14,7 @@
 
 #menuItemsOut:hover #menuItems {
     opacity: 1;
-    color: var(--theme);
+    color: var(--cl);
 }
 
 #menuItemsUser {
@@ -33,15 +33,15 @@
 
 #menuItemsOut:hover #menuItemsIcon {
     opacity: 1;
-    color: var(--theme);
+    color: var(--cl);
 }
 
 #appbar {
     position: fixed;
-    background: var(--theme);
+    background: var(--cl);
     cursor: default;
     text-transform: uppercase;
-    box-shadow: 4px 0px 10px var(--theme);
+    box-shadow: 4px 0px 10px var(--cl);
 }
 
 #background {

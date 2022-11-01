@@ -5,7 +5,7 @@
 }
 
 .AuthCardLayout {
-    box-shadow: 3px 3px 10px 2px  var(--gr);
+    box-shadow: 3px 3px 10px 2px  var(--clo);
     padding: 25px;
     border-bottom: 5px solid var(--cl);
     border-radius: 8% 2%;
@@ -16,7 +16,7 @@
     text-align: center;
     margin-bottom: 18px;
     color: var(--cl);
-    text-shadow: 0.7px 0.7px 3px var(--gr);
+    text-shadow: 0.7px 0.7px 3px var(--clo);
     margin-top: 20px;
     font-weight: 700;
 }
@@ -63,7 +63,7 @@
     margin: 22px 0px;
     padding: 6px 25px;
     border: none;
-    box-shadow: 1px 1px 10px var(--gr);
+    box-shadow: 1px 1px 10px var(--clo);
     border-radius: 25px;
     background: var(--cl);
     color: var(--login);

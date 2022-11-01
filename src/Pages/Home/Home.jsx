@@ -44,8 +44,11 @@ const App = () => {
         try {
             const { data } = await getTasks(user._id);
             setTask(data);
-        } catch (error) {
-            console.log(error);
+        } catch (err) {
+            setWarning({
+                status: "error",
+                msg: !err.response ? "Your Are offline" : err.response.data.msg,
+            });
         }
     };
 
@@ -173,7 +176,7 @@ const App = () => {
                                 <Checkbox
                                     checked={task.completed}
                                     onClick={() => handleUpdate(task._id)}
-                                    sx={{ accentColor: "#00ba21" }}
+                                    sx={{ m:1 }}
                                 />
                                 <div
                                     className={
@@ -181,6 +184,7 @@ const App = () => {
                                             ? "task line_through"
                                             : "task"
                                     }
+                                    id="title"
                                 >
                                     {task.task}
                                 </div>
