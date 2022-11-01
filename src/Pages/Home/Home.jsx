@@ -179,6 +179,7 @@ const App = () => {
                                     sx={{ m: 1 }}
                                 />
                                 <div
+                                    onClick={() => handleUpdate(task._id)}
                                     className={
                                         task.completed
                                             ? "task line_through"
