@@ -1,7 +1,6 @@
 import jwt from "jsonwebtoken";
 
 export const Verify = () => {
-    
     const localToken = localStorage.getItem("token");
     const decodedToken = jwt.decode(localToken);
 
@@ -9,5 +8,5 @@ export const Verify = () => {
         return "/login";
     }
 
-    return '/';
+    return "/";
 };

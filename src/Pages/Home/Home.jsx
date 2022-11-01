@@ -176,7 +176,7 @@ const App = () => {
                                 <Checkbox
                                     checked={task.completed}
                                     onClick={() => handleUpdate(task._id)}
-                                    sx={{ m:1 }}
+                                    sx={{ m: 1 }}
                                 />
                                 <div
                                     className={
