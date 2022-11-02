@@ -21,7 +21,7 @@ const App = () => {
     const newTaskRef = useRef();
     const [warning, setWarning] = useState("");
     const localToken = localStorage.getItem("token");
-    const { user } = jwt.decode(localToken);
+    const decodedToken = jwt.decode(localToken);
     const history = useNavigate();
 
     //~-------------------------------* TITLE *-------------------------------~//
@@ -42,7 +42,7 @@ const App = () => {
 
     let Fetch = async () => {
         try {
-            const { data } = await getTasks(user._id);
+            const { data } = await getTasks(decodedToken.user._id);
             setTask(data);
         } catch (err) {
             setWarning({
@@ -73,7 +73,7 @@ const App = () => {
             const tasks = [...originalTasks];
             const { data } = await addTask({
                 task: task.value,
-                userId: user._id,
+                userId:decodedToken.user._id,
             });
             tasks.push(data);
             setTask(tasks);
@@ -127,7 +127,7 @@ const App = () => {
 
     return (
         <>
-            <Navbar page="TODO" user={user.first_name} />
+            <Navbar page="TODO" user={decodedToken?.user.first_name} />
             {warning === "" ? null : (
                 <Popup
                     security={warning.status}

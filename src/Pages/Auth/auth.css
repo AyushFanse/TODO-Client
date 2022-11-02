@@ -21,26 +21,9 @@
     font-weight: 700;
 }
 
-
-#title, #input-with-icon-textfield {
+.title, label, input, #title {
     color: var(--cl) !important;
-}
-
-.title {
-    color: var(--cl) !important;
-}
-
-.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root, 
-.css-e4w4as-MuiFormLabel-root-MuiInputLabel-root,
-.css-o943dk-MuiFormLabel-root-MuiInputLabel-root,
-.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root
-{
-    color: var(--cl) !important;
-}
-
-.css-1ptx2yq-MuiInputBase-root-MuiInput-root:after, 
-.css-g9m4e0-MuiInputBase-root-MuiFilledInput-root:after{
-    border-color: var(--cl) !important;
+    outline-color: var(--cl) !important;
 }
 
 .AuthIcon {
