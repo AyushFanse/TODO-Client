@@ -41,5 +41,5 @@
 .Mui-checked,
 .MuiCheckbox-indeterminate {
     color: var(--cl) !important;
-    border-radius: 50% !important;
+    border-radius: 50% !important;  
 }
