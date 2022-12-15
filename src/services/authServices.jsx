@@ -1,5 +1,5 @@
 import axios from "axios";
-export const apiUrl = "https://todo-server-af.onrender.com";
+export const apiUrl = "https://todo-server-af.onrender.com/";
 
 const AuthApis = apiUrl + "auth";
 const UserApis = apiUrl + "user";
